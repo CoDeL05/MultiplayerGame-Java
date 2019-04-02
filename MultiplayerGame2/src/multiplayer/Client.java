@@ -21,6 +21,7 @@ import java.awt.event.KeyEvent;
 import java.util.List;
 
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import engine.Image;
 import engine.LineOfTerrain;
 import engine.Sprite;
@@ -111,6 +112,8 @@ public class Client {
             blocks.add(new Sprite(x,y,new String[][][]{{{img}}},false));
         }
     }
+
+
 
     static class Terrain{
 
