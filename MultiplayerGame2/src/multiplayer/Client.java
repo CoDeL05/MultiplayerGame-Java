@@ -113,7 +113,50 @@ public class Client {
         }
     }
 
+    static class PlayerBox{
 
+        private int x;
+        private int y;
+        private int w = 32;
+        private int h =  64;
+        private Player target ;
+        private static Color color,c1=Color.GREEN,c2=Color.RED;
+        private static HashMap<Boolean,Color> cMap = new HashMap<>();
+        static{
+            cMap.put(true,c1);
+            cMap.put(false,c2);
+        }
+
+        public PlayerBox(Player t){
+            target = t;
+        }
+        public PlayerBox(Player t,Color c1,Color c2){
+            target = t;
+            this.c1 = c1;
+            this.c2 = c2;
+        }
+        public PlayerBox(Player t, int w, int h){
+            target = t;
+            this.w = w;
+            this.h = h;
+        }
+        public PlayerBox(Player t, int w, int h,Color c1, Color c2){
+            target = t;
+            this.w = w;
+            this.h = h;
+            this.c1 = c1;
+            this.c2 = c2;
+        }
+
+        public boolean colorCondition(){
+           return Client.ii == target.from;
+        }
+        public void paint(Graphics g){
+            color = cMap.get(colorCondition());
+            g.setColor(color);
+        }
+
+    }
 
     static class Terrain{
 
