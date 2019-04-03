@@ -20,8 +20,6 @@ import java.util.*;
 import java.awt.event.KeyEvent;
 import java.util.List;
 
-
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import engine.Image;
 import engine.LineOfTerrain;
 import engine.Sprite;
@@ -31,6 +29,8 @@ import game.Bullet;
 import game.Guy;
 import game.Player;
 import main.*;
+import org.w3c.dom.css.Rect;
+import sun.plugin.services.PlatformService;
 
 public class Client {
 
@@ -124,24 +124,33 @@ public class Client {
         private int h =  64;
         private Player target ;
         private static Color color,c1=Color.GREEN,c2=Color.RED;
+        private static Rectangle2D rect;
+
         private static HashMap<Boolean,Color> cMap = new HashMap<>();
         static{
             cMap.put(true,c1);
             cMap.put(false,c2);
         }
 
+        private void makeRect(){
+            rect = new Rectangle2D.Float(x,y,w,h);
+        }
+
         public PlayerBox(Player t){
             target = t;
+            makeRect();
         }
         public PlayerBox(Player t,Color c1,Color c2){
             target = t;
             this.c1 = c1;
             this.c2 = c2;
+            makeRect();
         }
         public PlayerBox(Player t, int w, int h){
             target = t;
             this.w = w;
             this.h = h;
+            makeRect();
         }
         public PlayerBox(Player t, int w, int h,Color c1, Color c2){
             target = t;
@@ -149,10 +158,17 @@ public class Client {
             this.h = h;
             this.c1 = c1;
             this.c2 = c2;
+            makeRect();
         }
 
         public boolean colorCondition(){
            return Client.ii == target.from;
+        }
+        public boolean collide(Sprite s2){
+            return rect.intersects(s2.getHitBox());
+        }
+        public boolean collide(Rectangle2D r2){
+            return rect.intersects(r2);
         }
         public void paint(Graphics g){
             color = cMap.get(colorCondition());
@@ -277,7 +293,7 @@ public class Client {
 
         Player.bullets.removeAll(Player.bulletsToRemove);
         Player.bulletsToRemove.clear();
-        System.out.println("Number of players or size of 'pBoxes': "+Integer.toString(pBoxes.size()));
+        //System.out.println("Number of players or size of 'pBoxes': "+Integer.toString(pBoxes.size()));
         pBoxes.clear();
 
     }
@@ -642,6 +658,7 @@ public class Client {
 
                             }
                             Bullet spr = new Bullet(x+awX, y+awY, 3, angle, false);
+
                             spr.from = from;
                             spr.place = place;
                             spr.type = type;
@@ -676,8 +693,6 @@ public class Client {
                     }
                     if(pars.size() == 2){
 
-                        System.exit(0);
-
                     }
                     else{
                         if(Integer.parseInt(pars.get(0)) <= 24) {
@@ -691,11 +706,27 @@ public class Client {
 
 
     private static void paintBoxes(Graphics g,boolean terrain){
+
+        for(Sprite s : spritesList){
+            if(s.getId() == "bullet"){
+                Rectangle2D hBox = new Rectangle2D.Float(s.getX(),s.getY(),16,8);
+                Rectangle2D pBox = new Rectangle2D.Float(s1.getX(),s1.getY(),32,64);
+                if(s.from != Client.ii){
+                    g.setColor(Color.RED);
+                    g.fillRect(s.getX(),s.getY(),16,8);
+                    try{
+                        if(pBox.intersects(hBox)){
+                            System.exit(0); // INDICATES COLLISION
+                        }
+                    }catch(Exception e){
+                        System.out.println(e.getMessage());
+                    }
+                }
+            }
+        }
         for(PlayerBox pb : pBoxes){
             if(terrain) {
-                if(pb.target.from != Client.ii) {
-                    pb.paint(g);
-                }
+
             }else{
                 if(pb.target.from == Client.ii) {
                     pb.paint(g);
@@ -755,6 +786,8 @@ public class Client {
                         handleNPCS(g);
 
                         t.paint(g);
+
+
                         paintBoxes(g,false);
 
                         for(LineOfTerrain lot : terrains){

@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af9bf937-fbd1-4d34-9e78-c512e1c61e3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$PlayerBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$PlayerBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$Terrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$Terrain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/multiplayer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplayer/Client.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -210,6 +217,37 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-682057759">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2059" />
+          <entry key="txt" value="127" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2059" />
+          <entry key="PLAIN_TEXT" value="127" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MultiplayerGame" />
@@ -219,14 +257,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/multiplayer/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="177" column="22" lean-forward="true" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="718" column="41" selection-start-line="718" selection-start-column="41" selection-end-line="718" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9228#9229#0" expanded="true" />
-                <element signature="e#9266#9267#0" expanded="true" />
-                <element signature="e#9663#9664#0" expanded="true" />
-                <element signature="e#9717#9718#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,6 +310,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2278">
+              <caret line="194" column="41" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
+              <folding>
+                <element signature="e#2321#2322#0" expanded="true" />
+                <element signature="e#2336#2337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -290,20 +337,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multiplayer/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
+            <state relative-caret-position="-142">
               <caret line="50" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Params.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -319,12 +354,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>5</find>
-      <find>awfcy</find>
-      <find>line1</find>
-      <find>String</find>
-      <find>awfcY =</find>
-      <find>awfcY</find>
       <find>s1 =</find>
       <find>send()</find>
       <find>read</find>
@@ -349,6 +378,12 @@
       <find>UP</find>
       <find>System.</find>
       <find>bullets</find>
+      <find>controlPlayer</find>
+      <find>new PlayerB</find>
+      <find>fghj</find>
+      <find>Boxes</find>
+      <find>PlayerBox</find>
+      <find>System.e</find>
     </findStrings>
     <dirStrings>
       <dir>E:\MultiplayerGame\src\main</dir>
@@ -433,13 +468,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/thepa/Desktop/MultiplayerGame/src/engine/LineOfTerrain.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550515221803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554233812778" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -492,6 +527,28 @@
       <option name="presentableId" value="Default" />
       <updated>1543577206214</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit. All safe &amp; working.">
+      <created>1554228419928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554228419928</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added a private static 'PlayerBox' class to Client.java . Rest the same as : &quot;Initial commit. All safe &amp; working.&quot;">
+      <created>1554228503147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554228503147</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PlayerBox working &amp; tested.">
+      <created>1554229859196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554229859196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -507,8 +564,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4805915" visible="true" weight="0.15704697" />
-      <window_info id="Structure" order="1" sideWeight="0.5194085" side_tool="true" visible="true" weight="0.15704697" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47777778" visible="true" weight="0.16107382" />
+      <window_info id="Structure" order="1" sideWeight="0.5222222" side_tool="true" visible="true" weight="0.16107382" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -516,14 +573,14 @@
       <window_info id="Favorites" order="6" sideWeight="0.5007776" side_tool="true" weight="0.27910447" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23262411" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23404256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32765958" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -565,8 +622,24 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3295302" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit. All safe &amp; working." />
+    <MESSAGE value="Added a private static 'PlayerBox' class to Client.java . Rest the same as : &quot;Initial commit. All safe &amp; working.&quot;" />
+    <MESSAGE value="PlayerBox working &amp; tested." />
+    <option name="LAST_COMMIT_MESSAGE" value="PlayerBox working &amp; tested." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -686,14 +759,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/awt/Graphics2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-          <folding>
-            <element signature="e#2321#2322#0" expanded="true" />
-            <element signature="e#2336#2337#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-32">
+          <caret line="1122" column="25" selection-start-line="1122" selection-start-column="25" selection-end-line="1122" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Params.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/javax/swing/JPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -730,6 +820,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="194" column="41" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
+          <folding>
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -742,38 +843,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multiplayer/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
+        <state relative-caret-position="-142">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Params.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/awt/Graphics2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="1122" column="25" selection-start-line="1122" selection-start-column="25" selection-end-line="1122" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multiplayer/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="177" column="22" lean-forward="true" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="718" column="41" selection-start-line="718" selection-start-column="41" selection-end-line="718" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9228#9229#0" expanded="true" />
-            <element signature="e#9266#9267#0" expanded="true" />
-            <element signature="e#9663#9664#0" expanded="true" />
-            <element signature="e#9717#9718#0" expanded="true" />
           </folding>
         </state>
       </provider>
