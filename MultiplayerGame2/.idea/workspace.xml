@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af9bf937-fbd1-4d34-9e78-c512e1c61e3e" name="Default Changelist" comment="">
+    <list default="true" id="af9bf937-fbd1-4d34-9e78-c512e1c61e3e" name="Default Changelist" comment="Bullet - Player collision detection completed (part of the HP system).The PlayerBox class might possibly be redundant at this point (needs checking).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$2.class" afterDir="false" />
@@ -220,21 +220,24 @@
     <session id="-682057759">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2059" />
-          <entry key="txt" value="127" />
+          <entry key="java" value="2720" />
+          <entry key="txt" value="303" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2059" />
-          <entry key="PLAIN_TEXT" value="127" />
+          <entry key="JAVA" value="2720" />
+          <entry key="PLAIN_TEXT" value="303" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -257,10 +260,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/multiplayer/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="718" column="41" selection-start-line="718" selection-start-column="41" selection-end-line="718" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#28934#30690#0" expanded="true" />
+                <element signature="e#30689#30690#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -279,8 +283,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Guy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="170">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -291,8 +295,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Image.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="74" column="87" selection-start-line="74" selection-start-column="87" selection-end-line="74" selection-end-column="87" />
+            <state relative-caret-position="221">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -312,7 +316,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2278">
+            <state relative-caret-position="533">
               <caret line="194" column="41" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
               <folding>
                 <element signature="e#2321#2322#0" expanded="true" />
@@ -337,8 +341,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multiplayer/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-142">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="-340">
+              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -354,8 +358,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s1 =</find>
-      <find>send()</find>
       <find>read</find>
       <find>absY -=</find>
       <find>absY +=</find>
@@ -384,6 +386,8 @@
       <find>Boxes</find>
       <find>PlayerBox</find>
       <find>System.e</find>
+      <find>clean</find>
+      <find>INDI</find>
     </findStrings>
     <dirStrings>
       <dir>E:\MultiplayerGame\src\main</dir>
@@ -407,10 +411,10 @@
         <option value="$PROJECT_DIR$/src/engine/LineOfTerrain.java" />
         <option value="$PROJECT_DIR$/src/game/Bullet.java" />
         <option value="$PROJECT_DIR$/src/engine/Sprite.java" />
-        <option value="$PROJECT_DIR$/src/multiplayer/Server.java" />
         <option value="$PROJECT_DIR$/src/engine/Image.java" />
         <option value="$PROJECT_DIR$/src/game/Player.java" />
         <option value="$PROJECT_DIR$/src/game/Guy.java" />
+        <option value="$PROJECT_DIR$/src/multiplayer/Server.java" />
         <option value="$PROJECT_DIR$/src/multiplayer/Client.java" />
       </list>
     </option>
@@ -427,6 +431,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -468,8 +474,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -548,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554229859196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bullet - Player collision detection completed (part of the HP system).The PlayerBox class might possibly be redundant at this point (needs checking).">
+      <created>1554321760371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554321760371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -564,8 +575,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47777778" visible="true" weight="0.16107382" />
-      <window_info id="Structure" order="1" sideWeight="0.5222222" side_tool="true" visible="true" weight="0.16107382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47479674" visible="true" weight="0.08456376" />
+      <window_info id="Structure" order="1" sideWeight="0.5252032" side_tool="true" visible="true" weight="0.08456376" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -573,13 +584,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5007776" side_tool="true" weight="0.27910447" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23404256" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.23404256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.12765957" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32765958" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -639,7 +650,8 @@
     <MESSAGE value="Initial commit. All safe &amp; working." />
     <MESSAGE value="Added a private static 'PlayerBox' class to Client.java . Rest the same as : &quot;Initial commit. All safe &amp; working.&quot;" />
     <MESSAGE value="PlayerBox working &amp; tested." />
-    <option name="LAST_COMMIT_MESSAGE" value="PlayerBox working &amp; tested." />
+    <MESSAGE value="Bullet - Player collision detection completed (part of the HP system).The PlayerBox class might possibly be redundant at this point (needs checking)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bullet - Player collision detection completed (part of the HP system).The PlayerBox class might possibly be redundant at this point (needs checking)." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -795,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Guy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="170">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -805,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="74" column="87" selection-start-line="74" selection-start-column="87" selection-end-line="74" selection-end-column="87" />
+        <state relative-caret-position="221">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -822,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
+        <state relative-caret-position="533">
           <caret line="194" column="41" selection-start-line="194" selection-start-column="41" selection-end-line="194" selection-end-column="41" />
           <folding>
             <element signature="e#2321#2322#0" expanded="true" />
@@ -843,17 +855,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multiplayer/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="-340">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multiplayer/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="718" column="41" selection-start-line="718" selection-start-column="41" selection-end-line="718" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#28934#30690#0" expanded="true" />
+            <element signature="e#30689#30690#0" expanded="true" />
           </folding>
         </state>
       </provider>

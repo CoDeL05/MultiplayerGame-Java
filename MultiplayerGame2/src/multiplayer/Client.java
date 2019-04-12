@@ -24,13 +24,10 @@ import engine.Image;
 import engine.LineOfTerrain;
 import engine.Sprite;
 
-
 import game.Bullet;
 import game.Guy;
 import game.Player;
 import main.*;
-import org.w3c.dom.css.Rect;
-import sun.plugin.services.PlatformService;
 
 public class Client {
 
@@ -45,6 +42,13 @@ public class Client {
 
     public static int awfcX = 0,awfcY=0;
 
+    private static ArrayList<Sprite> spritesToClean = new ArrayList();
+
+    public static void removeSprite(Sprite s ){
+        spritesToClean.add(s);
+    }
+
+    private static int PLAYERHP = 100;
 
     private static ArrayList<Sprite> spritesSentOnce = new ArrayList<Sprite>();
 
@@ -291,8 +295,10 @@ public class Client {
 
     private static void cleanup(){
 
-        Player.bullets.removeAll(Player.bulletsToRemove);
-        Player.bulletsToRemove.clear();
+        /*Player.bullets.removeAll(Player.bulletsToRemove);
+        Player.bulletsToRemove.clear();*/
+        Client.spritesList.removeAll(Client.spritesToClean);
+        Client.spritesToClean.clear();
         //System.out.println("Number of players or size of 'pBoxes': "+Integer.toString(pBoxes.size()));
         pBoxes.clear();
 
@@ -392,18 +398,19 @@ public class Client {
             for (Line2D l2d : l1.getLinesAbs()) {
 
 
-                for(Bullet b : Player.bullets){
+               /*for(Bullet b : Player.bullets){
 
                         if (l2d.intersects(new Rectangle2D.Float(b.getX(), b.getY(), 16, 8))) {
 
                             b.vis = false;
                             b.setX(-Integer.MAX_VALUE);
                             b.setY(-Integer.MAX_VALUE);
-                            Player.bulletsToRemove.add(b);
+                            //Player.bulletsToRemove.add(b);
+                            removeSprite(b);
                         }
 
 
-                }/**/
+                }*/
 
                 Graphics2D g2d = (Graphics2D) g;
                 g2d.setColor(Color.GREEN);
@@ -546,7 +553,7 @@ public class Client {
 
             int II = (int) (360-Math.atan2(Mouse.getY()-s1.getY(), Mouse.getX()-s1.getX())*180/Math.PI)%360;
 
-            Player.bullets.add(new Bullet(s1.getX(),s1.getY(),3,II,true));
+            //Player.bullets.add(new Bullet(s1.getX(),s1.getY(),3,II,true));
 
         }
     }
@@ -707,16 +714,17 @@ public class Client {
 
     private static void paintBoxes(Graphics g,boolean terrain){
 
-        for(Sprite s : spritesList){
+        for(Sprite s : spritesList){ // USELESS
             if(s.getId() == "bullet"){
                 Rectangle2D hBox = new Rectangle2D.Float(s.getX(),s.getY(),16,8);
                 Rectangle2D pBox = new Rectangle2D.Float(s1.getX(),s1.getY(),32,64);
                 if(s.from != Client.ii){
                     g.setColor(Color.RED);
-                    g.fillRect(s.getX(),s.getY(),16,8);
+                    //g.fillRect(s.getX(),s.getY(),16,8);
                     try{
                         if(pBox.intersects(hBox)){
-                            System.exit(0); // INDICATES COLLISION
+                           // System.exit(0); // INDICATES COLLISIO
+                            ///s.setX(-1000000);
                         }
                     }catch(Exception e){
                         System.out.println(e.getMessage());
@@ -724,6 +732,26 @@ public class Client {
                 }
             }
         }
+
+        for(Sprite s : spritesList){
+            if(s.getId() == "bullet")
+            {
+                if(s.from == Client.ii){
+                    g.fillRect(s.getX(),s.getY(),s.getW(),s.getH());
+                    for(Sprite s2 : spritesList){
+
+                        if(s2.getId() == "player" && s2.from != Client.ii){
+                            Rectangle2D hBox = new Rectangle2D.Float(s.getX(),s.getY(),16,8);
+                            Rectangle2D pBox = new Rectangle2D.Float(s2.getX(),s2.getY(),32,64);
+                            if(hBox.intersects(pBox)){
+                                spritesToClean.add(s);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         for(PlayerBox pb : pBoxes){
             if(terrain) {
 
@@ -852,7 +880,7 @@ public class Client {
 
 
 
-                                for(Bullet b1 : Player.bullets) {
+                               /* for(Bullet b1 : Player.bullets) {
 
                                     if(b1.old == 0) {
                                         b1.angle = (int) (360-Math.atan2(Mouse.getX()-s1.getX(), Mouse.getY()-s1.getY())*180/Math.PI)%360;
@@ -867,7 +895,7 @@ public class Client {
                                     b1.addY(Dy);
                                     b1.addX(Dx);
                                     b1.old += 1;
-                                    }
+                                    }*/
 
                                     send();
 
