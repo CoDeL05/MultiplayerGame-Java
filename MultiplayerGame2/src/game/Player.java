@@ -5,14 +5,18 @@ import engine.Sprite;
 import main.Params;
 
 import java.awt.*;
-import java.util.ArrayList;import java.util.LinkedList;
-
+import java.util.ArrayList;
 public class Player extends Sprite {
     private boolean hatOn = true;
-    public static LinkedList<Bullet> bullets = new LinkedList<Bullet>();
+    public static ArrayList<Bullet> bullets = new ArrayList<Bullet>();
 
-    public static LinkedList<Bullet> bulletsToRemove = new LinkedList<>();
+    public static ArrayList<Bullet> bulletsToRemove = new ArrayList<>();
 
+
+
+    public void cleanBullets(){
+
+    }
 
     private static String[][][] images = {
 

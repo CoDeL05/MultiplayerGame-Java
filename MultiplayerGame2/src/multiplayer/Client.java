@@ -74,7 +74,7 @@ public class Client {
             {2466,229},{2578,315},{2339,271},{2204,323},{2083,347},{1980,302},{1981,302},{1955,254},{1955,255},{1975,210},{1974,210},{1975,209},{1990,150},{1989,150},{2047,108},{2046,108},{2098,87},{2097,88},{2214,69},{2213,69},{2373,86},{2416,76},{2416,75},{2417,75},{2485,85},{2489,85},{2493,86},{2561,91},{2561,90},{2655,98},{2751,97},{2752,97},{2807,66},{2831,80},{2834,82},{2895,126},{3010,115},{3012,116},{3016,117},{3138,116},{3195,126},{3195,127},{3230,141},{3230,142},{3250,149},{3270,155},{3274,156},{3276,157},{3380,136},{3421,79},{3424,77},{3427,73},{3497,39},{3498,39},{3544,12},{3544,11},{3607,-18},{3607,-19},{3687,-26},{3688,-28},{3689,-30},{3747,-20},{3746,-20},{3748,-20},{3777,9},{3777,8},{3789,78},{3842,116},{3843,117},{3900,132},{3901,132},{3902,133},{3904,133},{3956,148},{3957,147},{3986,151},{3986,150},{3987,150},{4001,184},{4002,184},{4030,203},{4031,204},{4060,211},{4061,211},{4061,212},{4114,210},{4113,209},{4160,222},{4187,249},{4186,248},{4178,303},{4178,313},{4178,315},{4109,321},{4103,322},{4101,322},{3977,312},{3969,314},{3967,314},{3886,344},{3887,344},{3749,339},{3736,339},{3730,339},{3724,339},{3646,335},{3640,335},{3637,335},{3513,308},{3512,308},{3470,293},{3228,311},{3186,290},{3185,290},{2959,308},{2959,307},{2923,343},{2924,343},{2800,332},{2728,343},{2466,229}
 
     }, Params.DEFAULTPATH+"assets\\bricks.png",22,Params.DEFAULTPATH+"assets\\stone.png");
-
+    static LineOfTerrain fakeLine ;
     static boolean scrollX = false;
     static String tp = "player";
 
@@ -224,6 +224,7 @@ public class Client {
             for(Sprite s : blocks){
                 s.paint(g);
             }
+
             for(Sprite s : spritesList) {
 
                 if(localIds.contains(s.getId())) {
@@ -277,6 +278,7 @@ public class Client {
          terrains.add(line2);
          terrains.add(line3);
         terrains.add(line4);
+
     }
 
     private static void handleNightAndDay(Graphics g){
@@ -393,14 +395,15 @@ public class Client {
         }
 
         //((Graphics2D)g).draw(new Rectangle2D.Float(b.getX(),b.getY(),16,8));
+
         for (LineOfTerrain l1 : terrains)
         {
             for (Line2D l2d : l1.getLinesAbs()) {
 
 
-               /*for(Bullet b : Player.bullets){
+               for(Bullet b : Player.bullets){
 
-                        if (l2d.intersects(new Rectangle2D.Float(b.getX(), b.getY(), 16, 8))) {
+                        if (l2d.intersects(new Rectangle2D.Float(b.getX(), b.getY(), 16, 8)) )  {
 
                             b.vis = false;
                             b.setX(-Integer.MAX_VALUE);
@@ -410,8 +413,23 @@ public class Client {
                         }
 
 
-                }*/
-
+                }
+                fakeLine.paint(g);
+                fakeLine.setX(s1.getX());
+                fakeLine.setY(s1.getY());
+                for(Bullet b : Player.bullets){
+                    for(Sprite s : spritesList){
+                        if(s instanceof Player){
+                            if(s.from != Client.ii){
+                                if(new Rectangle2D.Float(b.getX(), b.getY(), 16, 8).intersects(new Rectangle2D.Float(s.getX(),s.getY(),32,64))){
+                                   b.setX(Integer.MAX_VALUE);
+                                   b.setY(Integer.MAX_VALUE);
+                                   Player.bullets.remove(b);
+                                }
+                            }
+                        }
+                    }
+                }
                 Graphics2D g2d = (Graphics2D) g;
                 g2d.setColor(Color.GREEN);
                 g2d.setStroke(new BasicStroke(2));
@@ -432,7 +450,7 @@ public class Client {
                 Rectangle2D rect = new Rectangle2D.Float((float) s1.getX(), (float) s1.getY(), s1.getW(), s1.getH());
 
 
-                if (l2d.intersects(rect)) {
+                if (l2d.intersects(rect) ) {
 
                     if(l2d.getY1() < s1.getY() && l2d.getY2() < s1.getY()){
                         s1.addY(10);
@@ -553,7 +571,7 @@ public class Client {
 
             int II = (int) (360-Math.atan2(Mouse.getY()-s1.getY(), Mouse.getX()-s1.getX())*180/Math.PI)%360;
 
-            //Player.bullets.add(new Bullet(s1.getX(),s1.getY(),3,II,true));
+            Player.bullets.add(new Bullet(s1.getX(),s1.getY(),3,II,true));
 
         }
     }
@@ -868,7 +886,8 @@ public class Client {
                 canvas.setDoubleBuffered(true);
 
                 s1 = new Player(100,Params.SCROLLBORDER_Y+64,true);
-
+                fakeLine = new LineOfTerrain(s1.getX(),s1.getY(),new int[][]{{0,0},{20,20},{10,20},{0,0}},Params.DEFAULTPATH+"assets\\dirt.png",30);
+              // terrains.add(fakeLine);
                 s1.type = 1;
 
 
@@ -880,7 +899,7 @@ public class Client {
 
 
 
-                               /* for(Bullet b1 : Player.bullets) {
+                                for(Bullet b1 : Player.bullets) {
 
                                     if(b1.old == 0) {
                                         b1.angle = (int) (360-Math.atan2(Mouse.getX()-s1.getX(), Mouse.getY()-s1.getY())*180/Math.PI)%360;
@@ -895,7 +914,7 @@ public class Client {
                                     b1.addY(Dy);
                                     b1.addX(Dx);
                                     b1.old += 1;
-                                    }*/
+                                    }
 
                                     send();
 
