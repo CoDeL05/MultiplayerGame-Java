@@ -2,6 +2,7 @@ package engine;
 
 import game.Bullet;
 import main.Pair;
+import main.Params;
 import multiplayer.Client;
 
 import java.awt.*;
@@ -290,6 +291,7 @@ public class LineOfTerrain {
         }
         for(Line2D l2d : lines){
             g2d.draw(l2d);
+
         }
         //g2d.draw(shape);
         BufferedImage textureImage = new BufferedImage(texW,texH,BufferedImage.TYPE_INT_ARGB);
@@ -332,8 +334,9 @@ public class LineOfTerrain {
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
 
-        g.drawImage(bufferedImage,x,y,w,h,null);
-        g.drawImage(innerTexture,x+xOff,y+yOff,null);
+
+            g.drawImage(bufferedImage, x, y, w, h, null);
+            g.drawImage(innerTexture, x + xOff, y + yOff, null);
 
 
 

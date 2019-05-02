@@ -37,6 +37,7 @@ public class Client {
     public static int absY = 0;
 
 
+
     static Socket socket=null;
     public static int ii = new Random().nextInt(10909);
 
@@ -48,7 +49,7 @@ public class Client {
         spritesToClean.add(s);
     }
 
-    private static int PLAYERHP = 100;
+    private static int PLAYERHP = 100000;
 
     private static ArrayList<Sprite> spritesSentOnce = new ArrayList<Sprite>();
 
@@ -59,7 +60,9 @@ public class Client {
             "bullet"
     }));
 
-    private static ArrayList<PlayerBox> pBoxes = new ArrayList<>();
+    static int framesMade = 0;
+
+
 
     static LineOfTerrain line1 = new LineOfTerrain(0,0,new int[][]{
             {2,166},{26,167},{50,244},{49,244},{61,399},{61,400},{59,436},{89,442},{135,418},{160,409},{160,408},{195,398},{196,398},{227,392},{270,383},{296,387},{306,390},{351,389},{352,389},{379,410},{405,422},{433,434},{477,428},{510,418},{531,413},{533,413},{534,413},{569,405},{594,395},{641,368},{680,363},{711,378},{712,378},{714,379},{748,393},{782,413},{783,413},{829,427},{857,421},{884,427},{928,420},{929,419},{981,397},{981,395},{1033,382},{1075,400},{1142,414},{1165,421},{1165,420},{1194,415},{1216,395},{1217,390},{1223,373},{1224,369},{1260,345},{1260,344},{1264,322},{1265,320},{1295,313},{1296,312},{1297,311},{1323,279},{1347,252},{1366,223},{1381,204},{1407,197},{1406,197},{1407,196},{1444,183},{1444,182},{1457,168},{1486,171},{1486,172},{1496,181},{1518,204},{1519,205},{1526,238},{1548,273},{1561,315},{1570,349},{1571,350},{1572,350},{1593,387},{1594,387},{1610,417},{1611,417},{1619,449},{1620,449},{1643,476},{1672,488},{1718,485},{1786,487},{1849,488},{1886,479},{1921,505},{1922,505},{1923,505},{1924,505},{1984,491},{1985,491},{2020,491},{2055,499},{2074,508},{2074,509},{2131,489},{2180,494},{2210,512},{2236,513},{2237,512},{2259,501},{2287,495},{2290,493},{2323,499},{2347,509},{2348,509},{2381,506},{2406,472},{2425,466},{2425,465},{2442,441},{2442,440},{2443,436},{2456,424},{2458,423},{2459,422},{2460,421},{2495,373},{2495,371},{2509,315},{2510,313},{2509,256},{2509,253},{2507,201},{2498,200},{2508,172},{2530,141},{2557,94},{2558,94},{2604,76},{2639,152},{2652,195},{2651,196},{2686,244},{2687,244},{2697,313},{2698,313},{2725,344},{2762,419},{2762,418},{2789,469},{2822,496},{2822,497},{2868,501},{2922,507},{2963,510},{2983,512},{3022,506},{3054,503},{3107,497},{3134,508},{3167,499},{3172,495},{3186,489},{3209,486},{3225,489},{3257,495},{3282,511},{3321,514},{3336,516},{3397,512},{3428,506},{3470,497},{3500,498},{3541,501},{3574,507},{3599,486},{3625,482},{3626,482},{3639,528},{3676,539},{3687,573},{3687,574},{3688,597},{3660,647},{3600,677},{3533,697},{3532,697},{3483,684},{3482,683},{3480,682},{3443,672},{3442,672},{3439,671},{3375,666},{3318,658},{3231,677},{3129,693},{3108,717},{3011,733},{2986,774},{2987,835},{2902,895},{2845,933},{2803,978},{2723,1005},{2695,1023},{2671,1021},{2608,1065},{2588,1121},{2588,1122},{2592,1161},{2598,1195},{2639,1224},{2706,1249},{2770,1249},{2828,1239},{2916,1236},{2974,1244},{3053,1244},{3093,1244},{3137,1237},{3168,1247},{3197,1247},{3222,1251},{3237,1243},{3237,1242},{3281,1236},{3296,1219},{3297,1218},{3326,1205},{3337,1192},{3353,1184},{3380,1170},{3381,1169},{3401,1151},{3401,1150},{3438,1129},{3456,1115},{3469,1101},{3470,1100},{3482,1091},{3482,1090},{3491,1079},{3492,1078},{3510,1065},{3509,1065},{3527,1043},{3542,1025},{3568,999},{3569,997},{3589,961},{3589,959},{3592,955},{3622,944},{3646,929},{3692,913},{3732,903},{3732,902},{3792,887},{3795,886},{3817,873},{3818,872},{3838,856},{3838,855},{3884,851},{3893,826},{3894,826},{3934,808},{3968,792},{3992,793},{4020,760},{4021,759},{4029,749},{4048,723},{4064,655},{4102,600},{4102,599},{4116,585},{4142,565},{4142,564},{4197,569},{4196,568},{4218,559},{4250,562},{4251,562},{4303,573},{4305,574},{4345,579},{4346,579},{4379,576},{4381,575},{4416,573},{4465,584},{4478,636},{4532,720},{4560,745},{4587,777},{4627,799},{4628,800},{4664,805},{4664,806},{4726,809},{4727,809},{4748,807},{4756,798},{4801,805},{4863,797},{4914,801},{4964,774},{4997,754},{5037,688},{5048,646},{5049,643},{5068,590},{5068,589},{5084,548},{5137,546},{5152,543},{5177,553},{5206,564},{5207,564},{5222,579},{5223,580},{5224,658},{5224,701},{5223,702},{5204,784},{5208,814},{5207,864},{5204,903},{5204,1027},{5082,1070},{4818,1159},{4173,1145},{3959,1214},{3958,1213},{3515,1498},{3290,1624},{3037,1576},{2867,1563},{2572,1577},{2261,1323},{2232,1047},{2110,969},{2018,952},{1757,764},{1576,710},{1457,647},{1456,646},{1397,607},{1411,512},{1359,451},{1301,523},{1256,586},{1257,611},{1146,620},{805,594},{634,538},{277,589},{5,598},{2,166}
@@ -120,73 +123,7 @@ public class Client {
         }
     }
 
-    static class PlayerBox{
 
-        private int x;
-        private int y;
-        private int w = 32;
-        private int h =  64;
-        private Player target ;
-        private static Color color,c1=Color.GREEN,c2=Color.RED;
-        private static Rectangle2D rect;
-
-        private static HashMap<Boolean,Color> cMap = new HashMap<>();
-        static{
-            cMap.put(true,c1);
-            cMap.put(false,c2);
-        }
-
-        private void makeRect(){
-            rect = new Rectangle2D.Float(x,y,w,h);
-        }
-
-        public PlayerBox(Player t){
-            target = t;
-            makeRect();
-        }
-        public PlayerBox(Player t,Color c1,Color c2){
-            target = t;
-            this.c1 = c1;
-            this.c2 = c2;
-            makeRect();
-        }
-        public PlayerBox(Player t, int w, int h){
-            target = t;
-            this.w = w;
-            this.h = h;
-            makeRect();
-        }
-        public PlayerBox(Player t, int w, int h,Color c1, Color c2){
-            target = t;
-            this.w = w;
-            this.h = h;
-            this.c1 = c1;
-            this.c2 = c2;
-            makeRect();
-        }
-
-        public boolean colorCondition(){
-           return Client.ii == target.from;
-        }
-        public boolean collide(Sprite s2){
-            return rect.intersects(s2.getHitBox());
-        }
-        public boolean collide(Rectangle2D r2){
-            return rect.intersects(r2);
-        }
-        public void paint(Graphics g){
-            color = cMap.get(colorCondition());
-            g.setColor(color);
-            x = target.getX();
-            y = target.getY();
-            g.drawRect(x,y,w,h);
-        }
-
-
-        public void addX(int g){x += g;}
-        public void addY(int g){y += g;}
-
-    }
 
     static class Terrain{
 
@@ -216,6 +153,8 @@ public class Client {
 
 
         public void paint(Graphics g){
+            framesMade += 1;
+
             Graphics2D g2d = (Graphics2D)g;
 
             AffineTransform at = AffineTransform.getTranslateInstance(x,y);
@@ -297,30 +236,17 @@ public class Client {
 
     private static void cleanup(){
 
-        /*Player.bullets.removeAll(Player.bulletsToRemove);
-        Player.bulletsToRemove.clear();*/
+        Player.bullets.removeAll(Player.bulletsToRemove);
+        Player.bulletsToRemove.clear();
+
         Client.spritesList.removeAll(Client.spritesToClean);
+        Client.sendSprites.removeAll(Client.spritesToClean);
         Client.spritesToClean.clear();
         //System.out.println("Number of players or size of 'pBoxes': "+Integer.toString(pBoxes.size()));
-        pBoxes.clear();
 
     }
 
     private static void controlPlayer(Graphics g) {
-
-
-
-
-        for(Sprite  s : spritesList){
-            if(s.getId() == "player"){
-                PlayerBox pb = new PlayerBox((Player)s);
-                pBoxes.add(pb);
-            }
-        }
-
-
-
-
 
         if (s1.getX() < Params.SCROOLBORDER_X || s1.getX() > 800 - Params.SCROOLBORDER_X) {
             scrollX = true;
@@ -405,18 +331,24 @@ public class Client {
 
                         if (l2d.intersects(new Rectangle2D.Float(b.getX(), b.getY(), 16, 8)) )  {
 
-                            b.vis = false;
-                            b.setX(-Integer.MAX_VALUE);
-                            b.setY(-Integer.MAX_VALUE);
-                            //Player.bulletsToRemove.add(b);
+                            spritesToClean.add(b);
+
+                            Player.bulletsToRemove.add(b);
                             removeSprite(b);
                         }
 
 
                 }
-                fakeLine.paint(g);
-                fakeLine.setX(s1.getX());
-                fakeLine.setY(s1.getY());
+                for(Sprite s : spritesList){
+                    if(s instanceof Bullet){
+                        if(s.from != Client.ii){
+                            if(new Rectangle2D.Float(s.getX(),s.getY(),16,8).intersects(new Rectangle2D.Float(s1.getX(),s1.getY(),32,64))){
+                                PLAYERHP -= 1;
+
+                            }
+                        }
+                    }
+                }
                 for(Bullet b : Player.bullets){
                     for(Sprite s : spritesList){
                         if(s instanceof Player){
@@ -424,7 +356,8 @@ public class Client {
                                 if(new Rectangle2D.Float(b.getX(), b.getY(), 16, 8).intersects(new Rectangle2D.Float(s.getX(),s.getY(),32,64))){
                                    b.setX(Integer.MAX_VALUE);
                                    b.setY(Integer.MAX_VALUE);
-                                   Player.bullets.remove(b);
+                                   //Player.bullets.remove(b);
+                                    spritesToClean.add(b);
                                 }
                             }
                         }
@@ -571,7 +504,7 @@ public class Client {
 
             int II = (int) (360-Math.atan2(Mouse.getY()-s1.getY(), Mouse.getX()-s1.getX())*180/Math.PI)%360;
 
-            Player.bullets.add(new Bullet(s1.getX(),s1.getY(),3,II,true));
+            Player.bullets.add(new Bullet(s1.getX(),s1.getY()+16,3,II,true));
 
         }
     }
@@ -770,15 +703,7 @@ public class Client {
             }
         }
 
-        for(PlayerBox pb : pBoxes){
-            if(terrain) {
 
-            }else{
-                if(pb.target.from == Client.ii) {
-                    pb.paint(g);
-                }
-            }
-        }
     }
 
     /**Main method that puts everything together**/
@@ -818,11 +743,18 @@ public class Client {
 
                 setupTerrain();
 
+
+
+
                 JPanel canvas = new JPanel(){
                     public void paint(Graphics g) throws ConcurrentModificationException{
                         super.paint(g);
-
-
+                      //  System.out.println(System.currentTimeMillis()%1000);
+                        if(System.currentTimeMillis()%1000 < 20 ){
+                            Params.FPS = framesMade;
+                            framesMade = 0;
+                            System.out.println(Params.FPS);
+                        }
 
                         handleNightAndDay(g);
 
@@ -874,10 +806,12 @@ public class Client {
 
                         }
 
+                            //    System.out.println(Integer.toString(Player.bullets.size())+","+Integer.toString(spritesList.size()));}catch(NullPointerException e){}
+                        g.drawImage(new ImageIcon(Params.DEFAULTPATH+"assets\\bar.png").getImage(),10,10,null);
+                        g.fillRect(10, 10, (int) (PLAYERHP / 1000*1.28), 25);
+                            //      System.out.println(PLAYERHP);
 
-
-
-                        cleanup();// must ALWAYS be at the very END.
+                            cleanup();// must ALWAYS be at the very END.
 
 
 

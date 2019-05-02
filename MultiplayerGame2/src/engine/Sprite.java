@@ -1,5 +1,6 @@
 package engine;
 
+import javafx.print.PageLayout;
 import multiplayer.Client;
 
 import javax.swing.*;
@@ -256,6 +257,7 @@ public class Sprite {
 			g.setColor(Color.RED);
 			g.setFont(new Font("monospaced", Font.BOLD, 20));
 			//g.drawString(Integer.toString(x) + "," + Integer.toString(y), x, y - 20);
+
 		}
 
 	}

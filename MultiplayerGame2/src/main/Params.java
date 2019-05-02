@@ -18,6 +18,7 @@ public class Params {
 
 	public static Font DEFAULTFONT = new Font("monospaced",Font.BOLD,35);
 
+	public static int FPS = 0;
 
 	public static int PLAYERSPEED = 5;
 	static {
