@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="af9bf937-fbd1-4d34-9e78-c512e1c61e3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$PlayerBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$Terrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client$Terrain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/multiplayer/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/LineOfTerrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/LineOfTerrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Params.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multiplayer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multiplayer/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/engine/LineOfTerrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/engine/LineOfTerrain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/engine/Sprite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/engine/Sprite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/game/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/game/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiplayerGame/main/Params.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiplayerGame/main/Params.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Images.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -234,24 +228,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4506" />
-          <entry key="txt" value="324" />
+          <entry key="java" value="6230" />
+          <entry key="txt" value="502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4506" />
-          <entry key="PLAIN_TEXT" value="324" />
+          <entry key="JAVA" value="6230" />
+          <entry key="PLAIN_TEXT" value="502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -261,11 +255,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multiplayer/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="809" column="110" selection-start-line="809" selection-start-column="110" selection-end-line="809" selection-end-column="110" />
+            <state relative-caret-position="153">
+              <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#921#922#0" expanded="true" />
@@ -295,25 +289,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Params.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engine/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="136">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#147#154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/guy_corpse.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/main/Params.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding>
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Guy.java">
+        <entry file="file://$PROJECT_DIR$/src/engine/game/Cop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="34">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -322,10 +330,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engine/Image.java">
+        <entry file="file://$PROJECT_DIR$/src/game/Guy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="-527">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -336,7 +344,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/LineOfTerrain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="4315">
               <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
             </state>
           </provider>
@@ -345,8 +353,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -354,8 +362,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="259" selection-start-line="259" selection-end-line="259" />
+            <state relative-caret-position="511">
+              <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
               <folding>
                 <element signature="e#2321#2322#0" expanded="true" />
                 <element signature="e#2336#2337#0" expanded="true" />
@@ -367,8 +375,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="178">
+              <caret line="17" lean-forward="true" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -379,7 +387,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multiplayer/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="-329">
               <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -401,16 +409,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>aint</find>
-      <find>paint</find>
-      <find>out</find>
-      <find>l2d.getY</find>
-      <find>l2d.</find>
-      <find>YELLOW</find>
-      <find>l2d</find>
-      <find>UP</find>
-      <find>System.</find>
-      <find>bullets</find>
       <find>controlPlayer</find>
       <find>new PlayerB</find>
       <find>fghj</find>
@@ -418,7 +416,6 @@
       <find>System.e</find>
       <find>clean</find>
       <find>INDI</find>
-      <find>Mouse.</find>
       <find>lOt</find>
       <find>LineOfTerrain</find>
       <find>Linked</find>
@@ -428,9 +425,20 @@
       <find>-= 3</find>
       <find>-= 1</find>
       <find>System.out</find>
-      <find>BufferedImage</find>
       <find>PlayerBox</find>
       <find>cleanup</find>
+      <find>draw</find>
+      <find>RED</find>
+      <find>BufferedImage</find>
+      <find>bullet</find>
+      <find>-=</find>
+      <find>new Bullet</find>
+      <find>get(</find>
+      <find>Mouse.</find>
+      <find>Bullet</find>
+      <find>old</find>
+      <find>exten</find>
+      <find>Mouse</find>
     </findStrings>
     <dirStrings>
       <dir>E:\MultiplayerGame\src\main</dir>
@@ -450,19 +458,21 @@
         <option value="$PROJECT_DIR$/src/main/KeyBoard.java" />
         <option value="$PROJECT_DIR$/src/main/Mouse.java" />
         <option value="$PROJECT_DIR$/src/engine/game/Level.java" />
-        <option value="$PROJECT_DIR$/src/game/Bullet.java" />
         <option value="$PROJECT_DIR$/src/engine/Image.java" />
         <option value="$PROJECT_DIR$/src/game/Guy.java" />
         <option value="$PROJECT_DIR$/src/multiplayer/Server.java" />
         <option value="$PROJECT_DIR$/src/game/Player.java" />
         <option value="$PROJECT_DIR$/src/engine/Sprite.java" />
-        <option value="$PROJECT_DIR$/src/main/Params.java" />
         <option value="$PROJECT_DIR$/src/engine/LineOfTerrain.java" />
+        <option value="$PROJECT_DIR$/src/game/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/main/Params.java" />
+        <option value="$PROJECT_DIR$/src/engine/game/Cop.java" />
         <option value="$PROJECT_DIR$/src/multiplayer/Client.java" />
+        <option value="$PROJECT_DIR$/src/engine/Images.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-5" />
     <option name="y" value="5" />
     <option name="width" value="1400" />
@@ -501,6 +511,13 @@
               <item name="MultiplayerGame2" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiplayerGame2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiplayerGame2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiplayerGame2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -526,11 +543,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/thepa/Desktop/MultiplayerGame/src/engine/LineOfTerrain.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554233812778" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556917965204" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thepa\Desktop\jmlt\MultiplayerGame-Java\MultiplayerGame2\assets" />
       <recent name="E:\MultiplayerGame\assets" />
       <recent name="E:\MultiplayerGame\src\assets" />
       <recent name="E:\MultiplayerGame\src\engine\game" />
@@ -614,7 +633,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556655131846</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="HP DONE AT FKN LAST lets move on...">
+      <created>1556797808102</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556797808102</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Light in the tunnel... Weapon types added, started working on artificially controlled characters (cops, soldiers etc. ).">
+      <created>1556917964171</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556917964171</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -630,8 +663,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4519774" visible="true" weight="0.2342282" />
-      <window_info id="Structure" order="1" sideWeight="0.5480226" side_tool="true" visible="true" weight="0.2342282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.45112783" visible="true" weight="0.2342282" />
+      <window_info id="Structure" order="1" sideWeight="0.5488722" side_tool="true" visible="true" weight="0.2342282" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -639,15 +672,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.5007776" side_tool="true" weight="0.27910447" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899329" visible="true" weight="0.24680851" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4885906" visible="true" weight="0.24539007" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5100671" side_tool="true" visible="true" weight="0.24680851" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5114094" side_tool="true" visible="true" weight="0.24539007" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4899329" weight="0.3248227" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4885906" weight="0.3248227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -707,14 +740,15 @@
     <MESSAGE value="PlayerBox working &amp; tested." />
     <MESSAGE value="Bullet - Player collision detection completed (part of the HP system).The PlayerBox class might possibly be redundant at this point (needs checking)." />
     <MESSAGE value="Bullet - Player collision detection completed AT FKN LAST" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bullet - Player collision detection completed AT FKN LAST" />
+    <MESSAGE value="HP DONE AT FKN LAST lets move on..." />
+    <MESSAGE value="Light in the tunnel... Weapon types added, started working on artificially controlled characters (cops, soldiers etc. )." />
+    <option name="LAST_COMMIT_MESSAGE" value="Light in the tunnel... Weapon types added, started working on artificially controlled characters (cops, soldiers etc. )." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/javax/swing/RepaintManager.java" />
     <entry file="file://$PROJECT_DIR$/src/engine/game/Image.java" />
     <entry file="file://$PROJECT_DIR$/src/engine/game/Animation.java" />
     <entry file="file://$PROJECT_DIR$/src/engine/game/Sprite.java" />
@@ -847,16 +881,6 @@
     <entry file="file://$PROJECT_DIR$/assets/guy_corpse.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Guy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/awt/Color.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -871,9 +895,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-876">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/LineOfTerrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4315">
+          <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding>
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Params.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Guy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/multiplayer/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="-329">
           <caret line="52" column="56" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -883,62 +965,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="259" selection-start-line="259" selection-end-line="259" />
-          <folding>
-            <element signature="e#2321#2322#0" expanded="true" />
-            <element signature="e#2336#2337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="178">
+          <caret line="17" lean-forward="true" selection-end-line="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/LineOfTerrain.java">
+    <entry file="file://$PROJECT_DIR$/src/engine/game/Cop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Params.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="34">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multiplayer/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="809" column="110" selection-start-line="809" selection-start-column="110" selection-end-line="809" selection-end-column="110" />
+        <state relative-caret-position="153">
+          <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#921#922#0" expanded="true" />
@@ -963,6 +1013,17 @@
             <element signature="e#11494#11495#0" expanded="true" />
             <element signature="e#30255#32698#0" expanded="true" />
             <element signature="e#32697#32698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Images.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#147#154#0" expanded="true" />
           </folding>
         </state>
       </provider>
