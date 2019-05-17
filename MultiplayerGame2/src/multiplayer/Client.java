@@ -24,6 +24,7 @@ import engine.Image;
 import engine.LineOfTerrain;
 import engine.Sprite;
 
+import engine.game.Cop;
 import game.Bullet;
 import game.Guy;
 import game.Player;
@@ -37,6 +38,18 @@ public class Client {
     public static int absY = 0;
     public static int DEATHS=0,KILLS=0;
     public static int WEAPON_TYPE = 1;
+
+    private static ArrayList<Cop> cops = new ArrayList<Cop>();
+    static{
+
+        for(int i =0;i<4;i++){
+            cops.add(new Cop(new Random().nextInt(3000),300,false,-2,0));
+        }
+
+    }
+
+
+    private static ArrayList<Cop> myCops = new ArrayList<>();
 
     static Socket socket=null;
     public static int ii = new Random().nextInt(10909);
@@ -97,6 +110,8 @@ public class Client {
     public static KeyBoard kb;
     public static Mouse ms ;
 
+    private static String copMes = "";
+
     private static ArrayList<Sprite> blocks = new ArrayList<>();
 
     static Guy g1 = new Guy(200,100,"mess_around",Params.DEFAULTPATH+"assets\\hoodie2.png",Params.DEFAULTPATH+"assets\\jeans.png",false);
@@ -153,7 +168,7 @@ public class Client {
 
 
 
-
+        Cop c = new Cop(100,100,false,Client.ii,0);
         public void paint(Graphics g){
             framesMade += 1;
 
@@ -165,6 +180,8 @@ public class Client {
             for(Sprite s : blocks){
                 s.paint(g);
             }
+
+            //c.paint(g);
 
             for(Sprite s : spritesList) {
 
@@ -548,9 +565,12 @@ public class Client {
 
     }
 
+    //private static int cops = 0;
     private static void send(){
         String toPrint = "";
+
         for(Sprite s : sendSprites){
+
             if(s.getId() == "player"){
                 toPrint += ((Player)s).toString()+"/";
             }else {
@@ -715,7 +735,6 @@ public class Client {
 
 
 
-
                 JPanel canvas = new JPanel(){
                     public void paint(Graphics g) throws ConcurrentModificationException{
                         super.paint(g);
@@ -734,7 +753,10 @@ public class Client {
                         handleNPCS(g);
 
                         t.paint(g);
+                        for(int i = 0;i<4;i++){
+                            spritesList.add(new Cop(400,300,false,-2,0));
 
+                        }
 
                         paintBoxes(g,false);
 
@@ -781,7 +803,12 @@ public class Client {
                         g.setColor(new Color(104,0,0));
                         g.fillRect(10+32 +256-(256-(int) (PLAYERHP / 1000*2.56)), 10, (256-(int) (PLAYERHP / 1000*2.56)), 32);
                             //      System.out.println(PLAYERHP);
-
+                        for(Sprite s : spritesList){
+                            if(s instanceof Cop){
+                                s.paint(g);
+                                System.out.println("pies");
+                            }
+                        }
                             cleanup();// must ALWAYS be at the very END.
 
 

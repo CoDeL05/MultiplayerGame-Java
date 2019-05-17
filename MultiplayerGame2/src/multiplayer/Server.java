@@ -1,10 +1,11 @@
 package multiplayer;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import engine.LineOfTerrain;
+import engine.game.Cop;
 import game.Guy;
 import main.Params;
 
-import javax.swing.plaf.synth.SynthEditorPaneUI;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -18,6 +19,7 @@ public class Server {
     static boolean stop = false;
     static boolean subst = false;
     static int wait = 0;
+    private static ArrayList<Cop> enemies = new ArrayList<Cop>();
     static class ClientObject{
 
 
@@ -39,15 +41,21 @@ public class Server {
 
     static ArrayList<Guy> guys = new ArrayList<Guy>();
 
-    static ClientObject[] ss;
+    private static ClientObject[] ss;
+    static int mapType =0;
+    private static ArrayList<LineOfTerrain> lines = new ArrayList<>();
     public static void main(String[] args) throws Exception {
 
         guys.add(new Guy(100,200, "mess_around",Params.DEFAULTPATH+"assets\\hoodie.png",Params.DEFAULTPATH+"assets\\jeans.png",false));
+        mapType = Integer.parseInt(args[0])-1;
+        if(mapType == 0){
 
+        }
         final int players = 2;
 
         int port = 10005;
         ss = new ClientObject[players];
+
 
 
         ServerSocket serverSocket = new ServerSocket(port);
@@ -59,6 +67,10 @@ public class Server {
 
         for(ClientObject co : ss){
             co.out.println("Message from server");
+        }
+
+        for(int i = 0;i<4*players;i++){
+            enemies.add(new Cop(new Random().nextInt(800),new Random().nextInt(600),false,-2,0));
         }
 
         Thread mainThread = new Thread(){
@@ -111,14 +123,13 @@ public class Server {
                             if(co.in.hasNextLine()){
                                 allRes += co.in.nextLine()+"/";
                             }
-                        }
-                        if(frames == 10){
-                            System.out.println("tu");
-                            for(Guy g : guys){
-                                allRes += g.toString();
+                            for(Cop enemy : enemies){
+                                allRes += enemy.toString() + "/";
                             }
-                            System.out.println(allRes);
                         }
+
+
+
                         allRes += Integer.toString(time);
 
 
