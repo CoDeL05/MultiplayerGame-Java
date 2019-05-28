@@ -195,8 +195,10 @@ public class Sprite {
 		String[][] animation = images[type];
 		place = place % getAnim().length;
 		String[] frame = animation[place];
-		if(play){
+		String image = frame[0];
+		if(play || id == "cop"){
 			if(delay == 0) {
+
 				place += 1;
 				place = place % getAnim().length;
 				frame = animation[place];
@@ -205,7 +207,6 @@ public class Sprite {
 				delay  -= 1;
 			}
 		}
-		String image = frame[0];
 		img = new ImageIcon(image).getImage();
 		if(!alreadyScaled) {
 			w = img.getWidth(null);
@@ -220,7 +221,8 @@ public class Sprite {
 	public void paint(Graphics g){
 		if(vis){
 		load();
-		if(toSprites){
+		int o = 0;
+		if(toSprites && o == 1){
 			Client.sendSprites.add(this);
 		}
 		assert img != null && w > 0 && h > 0;

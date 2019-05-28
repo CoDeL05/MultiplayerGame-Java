@@ -45,7 +45,7 @@ public class Cop extends Sprite {
         id = "cop";
         if(wType == 0){
             weapon = new Images(x,y,Params.DEFAULTPATH+"assets//palawlapie1.png",Params.DEFAULTPATH+"assets//palawlapie2.png",Params.DEFAULTPATH+"assets//palawlapie3.png",Params.DEFAULTPATH+"assets//palawlapie4.png",Params.DEFAULTPATH+"assets//palawlapie5.png",Params.DEFAULTPATH+"assets//palawlapie6.png");
-            weapon.resume();
+
         }
         setFlipX(-1);
     }
@@ -57,7 +57,10 @@ public class Cop extends Sprite {
             weapon.setX(getX()+typeToPos[type].getFirst()+mr);
             weapon.setY(getY()+typeToPos[type].getSecond());
             weapon.setFlipX(getFlipX());
+
             weapon.paint(g);
+
+
         }catch(NullPointerException e){}
 
     }
